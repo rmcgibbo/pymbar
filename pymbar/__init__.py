@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU Lesser General Public
 # License along with pymbar. If not, see <http://www.gnu.org/licenses/>.
 ##############################################################################
+from __future__ import absolute_import, print_function, division
 
 """The pymbar package contains the pymbar suite of tools for the analysis of
 simulated and experimental data with the multistate Bennett acceptance
@@ -37,7 +38,7 @@ from pymbar.bar import BAR, BARzero
 from pymbar.exp import EXP, EXPGauss
 
 try:
-    from pymbar import version
+    from . import version
 except:
     # Fill in information manually.
     # TODO: See if we can at least get the git revision info in here.
