@@ -37,14 +37,6 @@ from pymbar.mbar import MBAR
 from pymbar.bar import BAR, BARzero
 from pymbar.exp import EXP, EXPGauss
 
-try:
-    from . import version
-except:
-    # Fill in information manually.
-    # TODO: See if we can at least get the git revision info in here.
-    version = 'dev'
-    full_version = 'dev'
-    git_revision = 'dev'
-    isrelease = False
+from . import version
 
 __all__ = ['EXP', 'EXPGauss', 'BAR', 'BARzero', 'MBAR', 'timeseries', 'testsystems', 'confidenceintervals', 'utils']
