@@ -4,8 +4,6 @@ simulated and experimental data with the multistate Bennett acceptance
 ratio (MBAR) estimator.
 
 """
-#from distutils.sysconfig import get_config_var
-from distutils.core import setup, Extension
 from setuptools import setup, Extension
 import numpy
 import glob
